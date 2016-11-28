@@ -273,7 +273,7 @@ def plotMatrix(hm, outFileName,
     fig.suptitle(plotTitle, y=1 - (0.06 / figheight))
 
     # color map for the summary plot (profile) on top of the heatmap
-    cmap_plot = plt.get_cmap('jet')
+    cmap_plot = plt.get_cmap('Dark2')
     numgroups = hm.matrix.get_num_groups()
     if perGroup:
         color_list = cmap_plot(np.arange(hm.matrix.get_num_samples()) / hm.matrix.get_num_samples())
